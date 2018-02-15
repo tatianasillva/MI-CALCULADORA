@@ -37,30 +37,62 @@ System.out.println( "c.multiplicar");
 System.out.println( "d.coseno");
 
 
- opcion = miEscaner.nextInt();
-   miCalculadora.setX(opcion)
+ opcion =(int) miEscaner.nextFloat();
+   miCalculadora.setX(opcion);
    
-  entrada=miEscaner.nextInt();
-  miCalculadora.setY(opcion); 
+ 
    
-  
-  
-              
-  int entrada;
-  entrada=miEscaner.nextInt();
-  miCalculadora.setX(entrada);
-  
-  
-  entrada=miEscaner.nextInt();
-  miCalculadora.setY(entrada);
-  
-   miCalculadora.sumar();
-   
-   
-   System.out.println(  miCalculadora.getR());
-  
-  
+  switch (opcion){
+      
+      case 1: {
+          
+          float entrada;
+          
+       System.out.println( "INGRESE EL PRIMER NUMERO");
+       
+       
+       
+       entrada = miEscaner.nextFloat();
+      miCalculadora.setX((int) entrada);
    
    
+      System.out.println( "INGRESE EL SEGUNDO NUMERO");
+      
+      
+             entrada = miEscaner.nextFloat();
+        miCalculadora.setY((int) entrada);
+   
+    
+          miCalculadora.sumar();
+        
+      }
+     
+  
+  
+  break;
+  
+  
+  case 2:{
+      
+        miCalculadora.restar();
+  }
+  
+   break;
+  
+  
+  case 3:{
+  
+      miCalculadora.multiplicar();
+  }
+  
+     break;
+     
+     
+  default:{
+  
+  }
+  }
    }
+
 }
+        

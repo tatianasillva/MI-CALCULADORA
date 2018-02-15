@@ -5,6 +5,8 @@
  */
 package micalculadora;
 
+import java.lang;
+
 
 /**
  *
@@ -47,10 +49,14 @@ public class Calculadora {
     }
     
     r=x-y;
-    }          
-
-    }
-   
             
+            }
     
-
+     void multiplicar(){
+    r=x*y;
+     }
+    
+}
+                
+      
+  
